@@ -1,0 +1,280 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS PROTETORES</title>
+    <link rel="shortcut icon" href="{% static 'assets/sosprotetores.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'styles/mystyle.css' %}">
+ 
+</head>
+<body class="main_bg">
+    <aside class="menu">
+        <section class="main_content menu_content">
+            <h1><img src="{% static 'assets/Sos protetores1.jpeg' %}" alt="logo"></h1>
+            <span style="padding-left: 90px;">SOS PROTETORES</span>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="{% static 'assets/instagram.png' %}" alt="instagram"></a></li>
+                    <li><a href="#"><img src="{% static 'assets/facebook.png' %}" alt="facebook"></a></li>
+                    <li><a href="#"><img src="{% static 'assets/whatsapp.png' %}" alt="whatsapp"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </aside>
+    <main class="main_content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section>
+            <div>
+                <div style="display: flex;
+                            align-items: center;">
+                    <img style="border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;" src="{% static 'assets/gato preto com rajado.jpg' %}" alt="gato">
+                    <img src="{% static 'assets/gato branco e marrom.jpg' %}" alt="gato">
+                    <img src="{% static 'assets/gato laranja.jpeg' %}" alt="gato">
+                    <img style="border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;" src="{% static 'assets/gato rajado.jpeg' %}" alt="gato">
+                    <span style="position: absolute;
+                                    color: #ffffff;
+                                    font-size: 55px;
+                                    padding-left: 324px;
+                                    "><strong>ADOTE UM ANIMAL</strong></span>
+                    <span style="position: absolute;
+                    color: #ffffff;
+                    font-size: 30px;
+                    padding-left: 448px;
+                    padding-top: 152px;
+                    "><strong>SEJA UM CUIDADOR</strong></span>
+                </div>
+            </div>
+        </section>
+        <section class="white_block"><h2>SOBRE NÓS</h2>
+            <article>
+                <div><h3>QUEM SOMOS</h3>
+                <p>A Associação SOS Protetores de Animais de Itapeva é uma ONG (Organização Não Governamental), sem fins lucrativos criada há aproximadamente 2 anos, após a percepção do crescente descaso com a população de animais domésticos.</p></div>
+            </article>
+            <article>
+                <div><h3>MISSÃO</h3>
+                <p>Desde o seu princípio, a ONG tem como missão ajudar a causa animal de todas as formas possíveis, seja através do salvamento de animais domésticos, vítimas de abandono, reabilitando-os para um novo lar; seja conectando pessoas que não podem cuidar de seus animais, com pessoas que possam e queiram.</p></div>
+            </article>
+            <article>
+                <div><h3>SERVIÇOS</h3>
+                <p>Dentre alguns dos serviços realizados pela entidade estão o resgate, acolhimento, lar temporário, medicação, castração e suporte para os tutores de baixa  renda que precisam de auxílio seja com transporte, seja com aconselhamento e instruções em relação aos cuidados necessários para com os animais.</p></div>
+            </article>
+            <article>
+                <div><h3>DESTINATÁRIO</h3>
+                <p>Os serviços da ONG destina-se especificamente à pessoas que tenham animais em estado de vulnerabilidade e que NÃO tenham como objetivo final a venda ou procriação de animais com fins lucrativos; a atuação estende-se por Itapeva-SP e sua região.</p></div>
+                <br>
+                <br>
+                <br>
+            </article>
+            <article>
+                <div><h3>INFORMAÇÕES</h3>
+                <p>a*******@gmail.com.br<br>
+                (15) ****-****<br>
+                Rua ***** N°***, Vila ******<br>
+                Itapeva-SP</p></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </article>
+        </section>
+        <section class="white_block">
+            <h2>ÁREA DE ADOÇÃO</h2>
+            {% for animal in animals %}
+            {% if animal.nome == 'Amora'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Amora.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Caio'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Caio.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Feijão'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Feijao.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Floquinho'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Floquinho.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Geralt'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Geralt.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Léia'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Leia.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Mila'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Mila.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Nino'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Nino.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Olivia'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Olivia.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Pinha'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Pinha.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Santa'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Santa.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% elif animal.nome == 'Simba'%}
+                    <article class="animais">
+                        <div>
+                            <img src="{% static 'assets/Simba.png' %}" alt="gato">
+                            <ul>
+                                <li>Nome: {{animal.nome}}</li>
+                                <li>Espécie: {{animal.especie}}</li>
+                                <li>Sexo: {{animal.sexo}}</li>
+                                <li>Idade: {{animal.idade}}</li>
+                                <li>Cor: {{animal.cor}}</li>
+                                <li>Castrado: {{animal.castrado}}</li>
+                            </ul>
+                        </div>
+                    </article>
+            {% else %}
+
+            {% endif %}
+            {% endfor %}
+        </section>
+    </main>
+    <footer class="white_bg">
+        <h2>PROJETO INTEGRADOR</h2>
+        <p>Este site foi desenvolvido através da proposta do Projeto Integrador 1, desenvolver uma aplicação web com framework e Banco de dados, procurando sanar uma necessidade do mundo real. <br>
+        <br>
+        Esta aplicação é para fins 100% pedagógicos <br>
+        Alunos Eixo Computação - Univesp/2024</p>
+
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,12 @@
+INSERT INTO main_animais VALUES (1, 'Amora', 'Felina', 'Fêmea', '3 anos', 'Preto e branco', 'Sim');
+INSERT INTO main_animais VALUES (2, 'Caio', 'Felina', 'Macho', '4 anos', 'Preto com rajado', 'Sim');
+INSERT INTO main_animais VALUES (3, 'Feijão', 'Felina', 'Macho', '3 anos', 'Rajado', 'Sim');
+INSERT INTO main_animais VALUES (4, 'Floquinho', 'Felina', 'Fêmea', '4 anos', 'Branco', 'Sim');
+INSERT INTO main_animais VALUES (5, 'Geralt', 'Felina', 'Macho', '2 anos', 'Branco', 'Sim');
+INSERT INTO main_animais VALUES (6, 'Léia', 'Felina', 'Fêmea', '8 anos', 'Rajado', 'Sim');
+INSERT INTO main_animais VALUES (7, 'Mila', 'Felina', 'Fêmea', '3 meses', 'Rajado', 'Não');
+INSERT INTO main_animais VALUES (8, 'Nino', 'Felina', 'Macho', '4 anos', 'Branco com rajado', 'Sim');
+INSERT INTO main_animais VALUES (9, 'Olivia', 'Felina', 'Fêmea', '3 meses', 'Marrom', 'Não');
+INSERT INTO main_animais VALUES (10, 'Pinha', 'Felina', 'Fêmea', '3 anos', 'Preto e branco', 'Sim');
+INSERT INTO main_animais VALUES (11, 'Santa', 'Felina', 'Fêmea', '6 anos', 'Branco e marrom', 'Sim');
+INSERT INTO main_animais VALUES (12, 'Simba', 'Felina', 'Macho', '2 anos', 'Laranja', 'Sim');
